@@ -99,7 +99,7 @@ services:
         - "CMD-SHELL"
         - 'celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
       interval: 10s
-      timeout: 10s
+      timeout: 45s
       retries: 5
     environment:
       <<: *airflow-common-env

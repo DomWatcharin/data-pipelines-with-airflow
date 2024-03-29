@@ -1,0 +1,18 @@
+[2024-03-29T17:01:29.065+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_cli.echo_ds manual__2024-03-29T17:01:26.829004+00:00 [queued]>
+[2024-03-29T17:01:29.090+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_cli.echo_ds manual__2024-03-29T17:01:26.829004+00:00 [queued]>
+[2024-03-29T17:01:29.091+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-03-29T17:01:29.273+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): echo_ds> on 2024-03-29 17:01:26.829004+00:00
+[2024-03-29T17:01:29.381+0000] {standard_task_runner.py:60} INFO - Started process 3112 to run task
+[2024-03-29T17:01:29.432+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'demo_cli', 'echo_ds', 'manual__2024-03-29T17:01:26.829004+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/demo_cli.py', '--cfg-path', '/tmp/tmpq045tco0']
+[2024-03-29T17:01:29.448+0000] {standard_task_runner.py:88} INFO - Job 39: Subtask echo_ds
+[2024-03-29T17:01:29.522+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-29T17:01:29.739+0000] {task_command.py:423} INFO - Running <TaskInstance: demo_cli.echo_ds manual__2024-03-29T17:01:26.829004+00:00 [running]> on host c4cb237119ff
+[2024-03-29T17:01:30.011+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='domwatcharin' AIRFLOW_CTX_DAG_ID='demo_cli' AIRFLOW_CTX_TASK_ID='echo_ds' AIRFLOW_CTX_EXECUTION_DATE='2024-03-29T17:01:26.829004+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-29T17:01:26.829004+00:00'
+[2024-03-29T17:01:30.015+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-29T17:01:30.023+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo 2024-03-29']
+[2024-03-29T17:01:30.056+0000] {subprocess.py:86} INFO - Output:
+[2024-03-29T17:01:30.139+0000] {subprocess.py:93} INFO - 2024-03-29
+[2024-03-29T17:01:30.144+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-29T17:01:30.220+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=demo_cli, task_id=echo_ds, execution_date=20240329T170126, start_date=20240329T170129, end_date=20240329T170130
+[2024-03-29T17:01:30.281+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-29T17:01:30.348+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

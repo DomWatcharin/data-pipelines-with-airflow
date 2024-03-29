@@ -1,0 +1,1 @@
+[2024-03-28T17:22:37.374+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: cryptocurrency_data_pipeline.load_data_into_database scheduled__2024-01-08T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

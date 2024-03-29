@@ -1,0 +1,54 @@
+[2024-03-28T17:22:39.825+0000] {processor.py:161} INFO - Started process (PID=601) to work on /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:22:51.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_sensors.py for tasks to queue
+[2024-03-28T17:22:53.669+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:22:52.945+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:23:20.089+0000] {processor.py:840} INFO - DAG(s) 'demo_sensors' retrieved from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:33:45.771+0000] {processor.py:161} INFO - Started process (PID=822) to work on /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:33:47.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_sensors.py for tasks to queue
+[2024-03-28T17:33:50.815+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:33:48.216+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:34:41.989+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:34:39.012+0000] {timeout.py:68} ERROR - Process timed out, PID: 822
+[2024-03-28T17:34:47.049+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:34:44.408+0000] {dagbag.py:565} ERROR - DagBag import timeout for /opt/airflow/dags/demo_sensors.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 822
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 552, in collect_dags
+    found_dags = self.process_file(filepath, only_if_updated=only_if_updated, safe_mode=safe_mode)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 309, in process_file
+    mods = self._load_modules_from_file(filepath, safe_mode)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 374, in _load_modules_from_file
+    return parse(mod_name, filepath)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 80, in __exit__
+    signal.setitimer(signal.ITIMER_REAL, 0)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/demo_sensors.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 822
+[2024-03-28T17:34:47.629+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:37:58.050+0000] {processor.py:161} INFO - Started process (PID=191) to work on /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:37:58.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_sensors.py for tasks to queue
+[2024-03-28T17:37:58.068+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:37:58.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:37:58.340+0000] {processor.py:840} INFO - DAG(s) 'demo_sensors' retrieved from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:38:00.247+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:00.242+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:demo_sensors
+[2024-03-28T17:38:00.311+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:00.309+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:demo_sensors
+[2024-03-28T17:38:00.348+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:00.347+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:demo_sensors
+[2024-03-28T17:38:00.350+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:00.350+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:38:00.406+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:00.405+0000] {dag.py:3055} INFO - Creating ORM DAG for demo_sensors
+[2024-03-28T17:38:00.408+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:00.408+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_sensors to None, run_after=None
+[2024-03-28T17:38:00.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_sensors.py took 2.452 seconds
+[2024-03-28T17:38:33.751+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:38:33.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_sensors.py for tasks to queue
+[2024-03-28T17:38:34.052+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:33.961+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:38:36.143+0000] {processor.py:840} INFO - DAG(s) 'demo_sensors' retrieved from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:38:39.452+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:39.442+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:38:40.432+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:40.402+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_sensors to None, run_after=None
+[2024-03-28T17:38:41.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_sensors.py took 8.715 seconds
+[2024-03-28T17:40:29.236+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:40:33.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_sensors.py for tasks to queue
+[2024-03-28T17:40:38.246+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:40:37.096+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:40:57.679+0000] {processor.py:840} INFO - DAG(s) 'demo_sensors' retrieved from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:44:11.285+0000] {processor.py:161} INFO - Started process (PID=482) to work on /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:44:13.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_sensors.py for tasks to queue
+[2024-03-28T17:44:13.622+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:44:13.493+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_sensors.py
+[2024-03-28T17:44:17.859+0000] {processor.py:840} INFO - DAG(s) 'demo_sensors' retrieved from /opt/airflow/dags/demo_sensors.py

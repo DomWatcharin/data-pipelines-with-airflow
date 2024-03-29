@@ -1,0 +1,390 @@
+[2024-03-28T17:13:04.627+0000] {processor.py:161} INFO - Started process (PID=272) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:13:04.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:13:04.631+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:13:04.630+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:13:07.562+0000] {processor.py:840} INFO - DAG(s) 'cryptocurrency_data_pipeline' retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:13:08.561+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:13:08.560+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:13:08.581+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:13:08.581+0000] {dag.py:3820} INFO - Setting next_dagrun for cryptocurrency_data_pipeline to None, run_after=None
+[2024-03-28T17:13:08.619+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/cryptocurrency_data_pipeline.py took 4.000 seconds
+[2024-03-28T17:15:57.279+0000] {processor.py:161} INFO - Started process (PID=412) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:15:57.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:15:57.645+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:15:57.623+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:16:30.185+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:16:30.090+0000] {timeout.py:68} ERROR - Process timed out, PID: 412
+[2024-03-28T17:16:30.902+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:16:30.282+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 9, in <module>
+    import ccxt
+  File "/home/airflow/.local/lib/python3.8/site-packages/ccxt/__init__.py", line 29, in <module>
+    from ccxt.base.exchange import Exchange                     # noqa: F401
+  File "/home/airflow/.local/lib/python3.8/site-packages/ccxt/base/__init__.py", line 24, in <module>
+    from ccxt.base import exchange
+  File "/home/airflow/.local/lib/python3.8/site-packages/ccxt/base/exchange.py", line 47, in <module>
+    from ccxt.static_dependencies import ecdsa
+  File "<frozen importlib._bootstrap>", line 988, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 148, in __enter__
+  File "<frozen importlib._bootstrap>", line 176, in _get_module_lock
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 412
+[2024-03-28T17:16:30.979+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:16:37.474+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/cryptocurrency_data_pipeline.py took 40.826 seconds
+[2024-03-28T17:18:17.676+0000] {processor.py:161} INFO - Started process (PID=528) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:18:17.940+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:18:19.125+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:18:18.613+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:19:06.866+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:19:06.449+0000] {timeout.py:68} ERROR - Process timed out, PID: 528
+[2024-03-28T17:19:13.032+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:19:08.836+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 6, in <module>
+    from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 47, in <module>
+    from boto3.s3.transfer import S3Transfer, TransferConfig
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 16, in <module>
+    from botocore.args import ClientArgsCreator
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/args.py", line 26, in <module>
+    from botocore.config import Config
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/config.py", line 16, in <module>
+    from botocore.endpoint import DEFAULT_TIMEOUT, MAX_POOL_CONNECTIONS
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/endpoint.py", line 27, in <module>
+    from botocore.httpchecksum import handle_checksum_body
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 914, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1407, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1379, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1506, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 142, in _path_stat
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 528
+[2024-03-28T17:19:17.704+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:24:53.182+0000] {processor.py:161} INFO - Started process (PID=638) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:24:56.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:24:58.045+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:24:57.570+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:25:32.481+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:25:32.094+0000] {timeout.py:68} ERROR - Process timed out, PID: 638
+[2024-03-28T17:25:44.794+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:25:34.833+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 6, in <module>
+    from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 47, in <module>
+    from boto3.s3.transfer import S3Transfer, TransferConfig
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 638
+[2024-03-28T17:25:56.221+0000] {processor.py:161} INFO - Started process (PID=666) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:25:56.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:25:57.604+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:25:57.381+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:26:33.428+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:26:32.678+0000] {timeout.py:68} ERROR - Process timed out, PID: 666
+[2024-03-28T17:26:36.870+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:26:34.392+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 6, in <module>
+    from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 47, in <module>
+    from boto3.s3.transfer import S3Transfer, TransferConfig
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 21, in <module>
+    from botocore.credentials import RefreshableCredentials
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 666
+[2024-03-28T17:26:37.686+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:26:56.618+0000] {processor.py:161} INFO - Started process (PID=709) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:26:56.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:26:56.700+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:26:56.674+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:27:29.842+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:27:29.298+0000] {timeout.py:68} ERROR - Process timed out, PID: 709
+[2024-03-28T17:27:36.342+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:27:30.746+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 9, in <module>
+    import ccxt
+  File "/home/airflow/.local/lib/python3.8/site-packages/ccxt/__init__.py", line 84, in <module>
+    from ccxt.bequant import bequant                                      # noqa: F401
+  File "/home/airflow/.local/lib/python3.8/site-packages/ccxt/bequant.py", line 6, in <module>
+    from ccxt.hitbtc import hitbtc
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 709
+[2024-03-28T17:27:39.297+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:27:53.356+0000] {processor.py:161} INFO - Started process (PID=730) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:27:53.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:27:53.440+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:27:53.425+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:28:28.600+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:28:28.122+0000] {timeout.py:68} ERROR - Process timed out, PID: 730
+[2024-03-28T17:28:38.771+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:28:30.590+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 6, in <module>
+    from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 47, in <module>
+    from boto3.s3.transfer import S3Transfer, TransferConfig
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/docs/service.py", line 13, in <module>
+    from botocore.docs.bcdoc.restdoc import DocumentStructure
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/docs/bcdoc/restdoc.py", line 17, in <module>
+    from botocore.compat import OrderedDict
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/compat.py", line 29, in <module>
+    from botocore.vendored import six
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 730
+[2024-03-28T17:28:42.843+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:28:58.004+0000] {processor.py:161} INFO - Started process (PID=743) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:28:58.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:28:59.672+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:28:59.633+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:29:40.515+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:29:40.125+0000] {timeout.py:68} ERROR - Process timed out, PID: 743
+[2024-03-28T17:29:43.005+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:29:41.247+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 6, in <module>
+    from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 47, in <module>
+    from boto3.s3.transfer import S3Transfer, TransferConfig
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/docs/service.py", line 13, in <module>
+    from botocore.docs.bcdoc.restdoc import DocumentStructure
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 934, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_data
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 743
+[2024-03-28T17:29:44.799+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:30:01.029+0000] {processor.py:161} INFO - Started process (PID=763) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:30:06.025+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:30:08.127+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:30:07.219+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:30:57.253+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:30:56.904+0000] {timeout.py:68} ERROR - Process timed out, PID: 763
+[2024-03-28T17:31:07.293+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:30:58.554+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 6, in <module>
+    from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 47, in <module>
+    from boto3.s3.transfer import S3Transfer, TransferConfig
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 763
+[2024-03-28T17:31:14.421+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:33:45.337+0000] {processor.py:161} INFO - Started process (PID=824) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:33:47.685+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:33:52.013+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:33:50.025+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:34:41.757+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:34:38.767+0000] {timeout.py:68} ERROR - Process timed out, PID: 824
+[2024-03-28T17:34:46.978+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:34:45.407+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 6, in <module>
+    from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 824
+[2024-03-28T17:34:48.060+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:37:58.659+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:37:58.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:37:58.694+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:37:58.688+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:38:02.453+0000] {processor.py:840} INFO - DAG(s) 'cryptocurrency_data_pipeline' retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:38:02.813+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:02.812+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:38:02.867+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:02.864+0000] {dag.py:3820} INFO - Setting next_dagrun for cryptocurrency_data_pipeline to None, run_after=None
+[2024-03-28T17:38:02.944+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/cryptocurrency_data_pipeline.py took 4.496 seconds
+[2024-03-28T17:38:46.534+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:38:46.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:38:46.634+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:46.632+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:44:40.819+0000] {processor.py:161} INFO - Started process (PID=492) to work on /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:44:40.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cryptocurrency_data_pipeline.py for tasks to queue
+[2024-03-28T17:44:41.059+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:44:40.975+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cryptocurrency_data_pipeline.py
+[2024-03-28T17:45:17.413+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:45:17.214+0000] {timeout.py:68} ERROR - Process timed out, PID: 492
+[2024-03-28T17:45:22.331+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:45:17.880+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/cryptocurrency_data_pipeline.py
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap>", line 166, in _get_module_lock
+KeyError: 'botocore.crt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/cryptocurrency_data_pipeline.py", line 9, in <module>
+    from etl import (
+  File "/opt/airflow/dags/etl.py", line 6, in <module>
+    from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 47, in <module>
+    from boto3.s3.transfer import S3Transfer, TransferConfig
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.8/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 16, in <module>
+    from botocore.args import ClientArgsCreator
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/args.py", line 28, in <module>
+    from botocore.regions import EndpointResolverBuiltins as EPRBuiltins
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/regions.py", line 26, in <module>
+    from botocore.crt import CRT_SUPPORTED_AUTH_TYPES
+  File "<frozen importlib._bootstrap>", line 988, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 148, in __enter__
+  File "<frozen importlib._bootstrap>", line 166, in _get_module_lock
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/cryptocurrency_data_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 492
+[2024-03-28T17:45:27.255+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/cryptocurrency_data_pipeline.py

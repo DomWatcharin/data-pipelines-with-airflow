@@ -1,0 +1,13 @@
+[2024-03-28T17:21:37.050+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.create_final_table scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2024-03-28T17:21:46.644+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.create_final_table scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2024-03-28T17:21:47.097+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-03-28T17:22:02.765+0000] {taskinstance.py:2192} INFO - Executing <Task(PostgresOperator): create_final_table> on 2024-01-09 00:00:00+00:00
+[2024-03-28T17:22:03.685+0000] {standard_task_runner.py:60} INFO - Started process 578 to run task
+[2024-03-28T17:22:09.072+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cryptocurrency_data_pipeline', 'create_final_table', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/cryptocurrency_data_pipeline.py', '--cfg-path', '/tmp/tmp96u0k31o']
+[2024-03-28T17:22:13.179+0000] {standard_task_runner.py:88} INFO - Job 68: Subtask create_final_table
+[2024-03-28T17:22:30.146+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-28T17:22:55.211+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 68 for task create_final_table ((psycopg2.OperationalError) could not translate host name "airflow-metastore" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 578)
+[2024-03-28T17:23:21.723+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-28T17:23:37.016+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

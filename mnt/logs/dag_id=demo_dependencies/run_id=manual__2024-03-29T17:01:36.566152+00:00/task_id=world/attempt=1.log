@@ -1,0 +1,15 @@
+[2024-03-29T17:01:44.340+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_dependencies.world manual__2024-03-29T17:01:36.566152+00:00 [queued]>
+[2024-03-29T17:01:44.358+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_dependencies.world manual__2024-03-29T17:01:36.566152+00:00 [queued]>
+[2024-03-29T17:01:44.359+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-03-29T17:01:44.386+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): world> on 2024-03-29 17:01:36.566152+00:00
+[2024-03-29T17:01:44.394+0000] {standard_task_runner.py:60} INFO - Started process 3220 to run task
+[2024-03-29T17:01:44.399+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'demo_dependencies', 'world', 'manual__2024-03-29T17:01:36.566152+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/demo_dependencies.py', '--cfg-path', '/tmp/tmpb4ehjj4b']
+[2024-03-29T17:01:44.403+0000] {standard_task_runner.py:88} INFO - Job 44: Subtask world
+[2024-03-29T17:01:44.422+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-29T17:01:44.522+0000] {task_command.py:423} INFO - Running <TaskInstance: demo_dependencies.world manual__2024-03-29T17:01:36.566152+00:00 [running]> on host c4cb237119ff
+[2024-03-29T17:01:44.652+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='domwatcharin' AIRFLOW_CTX_DAG_ID='demo_dependencies' AIRFLOW_CTX_TASK_ID='world' AIRFLOW_CTX_EXECUTION_DATE='2024-03-29T17:01:36.566152+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-29T17:01:36.566152+00:00'
+[2024-03-29T17:01:44.654+0000] {demo_dependencies.py:13} INFO - World
+[2024-03-29T17:01:44.655+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-29T17:01:44.668+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=demo_dependencies, task_id=world, execution_date=20240329T170136, start_date=20240329T170144, end_date=20240329T170144
+[2024-03-29T17:01:44.751+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-29T17:01:44.775+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,28 @@
+[2024-03-29T09:36:52.142+0000] {processor.py:161} INFO - Started process (PID=9001) to work on /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:36:52.144+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_dag_trigger.py for tasks to queue
+[2024-03-29T09:36:52.145+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:52.145+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:36:52.160+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_trigger' retrieved from /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:36:52.285+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:52.285+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:36:52.301+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:52.300+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_dag_trigger to None, run_after=None
+[2024-03-29T09:36:52.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_dag_trigger.py took 0.200 seconds
+[2024-03-29T09:37:22.932+0000] {processor.py:161} INFO - Started process (PID=9225) to work on /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:37:22.933+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_dag_trigger.py for tasks to queue
+[2024-03-29T09:37:22.934+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.934+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:37:22.946+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_trigger' retrieved from /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:37:22.967+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.967+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:23.000+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.999+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_dag_trigger to None, run_after=None
+[2024-03-29T09:37:23.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_dag_trigger.py took 0.093 seconds
+[2024-03-29T09:37:53.957+0000] {processor.py:161} INFO - Started process (PID=9443) to work on /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:37:53.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_dag_trigger.py for tasks to queue
+[2024-03-29T09:37:53.959+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:53.959+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:37:53.971+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_trigger' retrieved from /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:37:53.983+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:53.982+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:53.996+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:53.996+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_dag_trigger to None, run_after=None
+[2024-03-29T09:37:54.014+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_dag_trigger.py took 0.062 seconds
+[2024-03-29T09:38:24.692+0000] {processor.py:161} INFO - Started process (PID=9659) to work on /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:38:24.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_dag_trigger.py for tasks to queue
+[2024-03-29T09:38:24.695+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:24.694+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:38:24.704+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_trigger' retrieved from /opt/airflow/dags/dags/demo_dag_trigger.py
+[2024-03-29T09:38:24.799+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:24.799+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:38:24.809+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:24.809+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_dag_trigger to None, run_after=None
+[2024-03-29T09:38:24.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_dag_trigger.py took 0.135 seconds

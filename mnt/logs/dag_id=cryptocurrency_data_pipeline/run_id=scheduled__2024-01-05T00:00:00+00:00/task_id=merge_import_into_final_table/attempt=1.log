@@ -1,0 +1,71 @@
+[2024-03-28T17:46:34.280+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.merge_import_into_final_table scheduled__2024-01-05T00:00:00+00:00 [queued]>
+[2024-03-28T17:46:43.606+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-03-28T17:46:47.502+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 143
+[2024-03-29T08:21:15.879+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.merge_import_into_final_table scheduled__2024-01-05T00:00:00+00:00 [queued]>
+[2024-03-29T08:21:17.014+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.merge_import_into_final_table scheduled__2024-01-05T00:00:00+00:00 [queued]>
+[2024-03-29T08:21:17.050+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-03-29T08:21:17.532+0000] {taskinstance.py:2192} INFO - Executing <Task(PostgresOperator): merge_import_into_final_table> on 2024-01-05 00:00:00+00:00
+[2024-03-29T08:21:17.851+0000] {standard_task_runner.py:60} INFO - Started process 269 to run task
+[2024-03-29T08:21:18.578+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cryptocurrency_data_pipeline', 'merge_import_into_final_table', 'scheduled__2024-01-05T00:00:00+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/cryptocurrency_data_pipeline.py', '--cfg-path', '/tmp/tmp50zv37ya']
+[2024-03-29T08:21:18.983+0000] {standard_task_runner.py:88} INFO - Job 102: Subtask merge_import_into_final_table
+[2024-03-29T08:21:22.026+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-29T08:21:23.784+0000] {task_command.py:423} INFO - Running <TaskInstance: cryptocurrency_data_pipeline.merge_import_into_final_table scheduled__2024-01-05T00:00:00+00:00 [running]> on host 75e340009066
+[2024-03-29T08:21:26.101+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='dom@dataengineercafe.io' AIRFLOW_CTX_DAG_OWNER='domwatcharin' AIRFLOW_CTX_DAG_ID='cryptocurrency_data_pipeline' AIRFLOW_CTX_TASK_ID='merge_import_into_final_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-05T00:00:00+00:00'
+[2024-03-29T08:21:26.153+0000] {sql.py:276} INFO - Executing: 
+            INSERT INTO cryptocurrency (
+                timestamp,
+                open,
+                highest,
+                lowest,
+                closing,
+                volume
+            )
+            SELECT
+                timestamp,
+                open,
+                highest,
+                lowest,
+                closing,
+                volume
+            FROM
+                cryptocurrency_import
+            ON CONFLICT (timestamp)
+            DO UPDATE SET
+                open = EXCLUDED.open,
+                highest = EXCLUDED.highest,
+                lowest = EXCLUDED.lowest,
+                closing = EXCLUDED.closing,
+                volume = EXCLUDED.volume
+        
+[2024-03-29T08:21:26.856+0000] {base.py:83} INFO - Using connection ID '***' for task execution.
+[2024-03-29T08:21:27.079+0000] {base.py:83} INFO - Using connection ID '***' for task execution.
+[2024-03-29T08:21:27.171+0000] {sql.py:432} INFO - Running statement: 
+            INSERT INTO cryptocurrency (
+                timestamp,
+                open,
+                highest,
+                lowest,
+                closing,
+                volume
+            )
+            SELECT
+                timestamp,
+                open,
+                highest,
+                lowest,
+                closing,
+                volume
+            FROM
+                cryptocurrency_import
+            ON CONFLICT (timestamp)
+            DO UPDATE SET
+                open = EXCLUDED.open,
+                highest = EXCLUDED.highest,
+                lowest = EXCLUDED.lowest,
+                closing = EXCLUDED.closing,
+                volume = EXCLUDED.volume
+        , parameters: None
+[2024-03-29T08:21:27.226+0000] {sql.py:441} INFO - Rows affected: 0
+[2024-03-29T08:21:27.615+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=cryptocurrency_data_pipeline, task_id=merge_import_into_final_table, execution_date=20240105T000000, start_date=20240329T082115, end_date=20240329T082127
+[2024-03-29T08:21:30.420+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-29T08:21:32.039+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

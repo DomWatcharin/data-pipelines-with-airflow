@@ -1,0 +1,28 @@
+[2024-03-29T09:36:51.508+0000] {processor.py:161} INFO - Started process (PID=8971) to work on /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:36:51.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_scheduling.py for tasks to queue
+[2024-03-29T09:36:51.510+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.510+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:36:51.525+0000] {processor.py:840} INFO - DAG(s) 'demo_scheduling' retrieved from /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:36:51.646+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.646+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:36:51.666+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.666+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_scheduling to 2022-03-01T00:00:00+00:00, run_after=2022-03-02T00:00:00+00:00
+[2024-03-29T09:36:51.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_scheduling.py took 0.179 seconds
+[2024-03-29T09:37:22.402+0000] {processor.py:161} INFO - Started process (PID=9197) to work on /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:37:22.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_scheduling.py for tasks to queue
+[2024-03-29T09:37:22.405+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.404+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:37:22.438+0000] {processor.py:840} INFO - DAG(s) 'demo_scheduling' retrieved from /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:37:22.486+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.486+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:22.521+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.520+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_scheduling to 2022-03-01T00:00:00+00:00, run_after=2022-03-02T00:00:00+00:00
+[2024-03-29T09:37:22.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_scheduling.py took 0.143 seconds
+[2024-03-29T09:37:52.613+0000] {processor.py:161} INFO - Started process (PID=9413) to work on /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:37:52.614+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_scheduling.py for tasks to queue
+[2024-03-29T09:37:52.614+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.614+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:37:52.629+0000] {processor.py:840} INFO - DAG(s) 'demo_scheduling' retrieved from /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:37:52.643+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.642+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:52.679+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.679+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_scheduling to 2022-03-01T00:00:00+00:00, run_after=2022-03-02T00:00:00+00:00
+[2024-03-29T09:37:52.695+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_scheduling.py took 0.084 seconds
+[2024-03-29T09:38:23.220+0000] {processor.py:161} INFO - Started process (PID=9627) to work on /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:38:23.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_scheduling.py for tasks to queue
+[2024-03-29T09:38:23.222+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.222+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:38:23.234+0000] {processor.py:840} INFO - DAG(s) 'demo_scheduling' retrieved from /opt/airflow/dags/dags/demo_scheduling.py
+[2024-03-29T09:38:23.321+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.321+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:38:23.340+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.340+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_scheduling to 2022-03-01T00:00:00+00:00, run_after=2022-03-02T00:00:00+00:00
+[2024-03-29T09:38:23.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_scheduling.py took 0.138 seconds

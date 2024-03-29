@@ -1,0 +1,21 @@
+[2024-03-29T09:36:52.807+0000] {processor.py:161} INFO - Started process (PID=9035) to work on /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:36:52.811+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_backfilling.py for tasks to queue
+[2024-03-29T09:36:52.815+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:52.814+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:36:52.841+0000] {processor.py:840} INFO - DAG(s) 'demo_backfilling' retrieved from /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:36:52.965+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:52.965+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:36:53.007+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:53.007+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_backfilling to 2024-03-28T00:00:00+00:00, run_after=2024-03-29T00:00:00+00:00
+[2024-03-29T09:36:53.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_backfilling.py took 0.238 seconds
+[2024-03-29T09:37:23.345+0000] {processor.py:161} INFO - Started process (PID=9252) to work on /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:37:23.346+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_backfilling.py for tasks to queue
+[2024-03-29T09:37:23.349+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:23.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:37:23.373+0000] {processor.py:840} INFO - DAG(s) 'demo_backfilling' retrieved from /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:37:23.396+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:23.396+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:23.435+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:23.435+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_backfilling to 2024-03-28T00:00:00+00:00, run_after=2024-03-29T00:00:00+00:00
+[2024-03-29T09:37:23.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_backfilling.py took 0.126 seconds
+[2024-03-29T09:37:54.292+0000] {processor.py:161} INFO - Started process (PID=9466) to work on /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:37:54.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_backfilling.py for tasks to queue
+[2024-03-29T09:37:54.294+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:54.293+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:37:54.311+0000] {processor.py:840} INFO - DAG(s) 'demo_backfilling' retrieved from /opt/airflow/dags/dags/demo_backfilling.py
+[2024-03-29T09:37:54.321+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:54.321+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:54.348+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:54.347+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_backfilling to 2024-03-28T00:00:00+00:00, run_after=2024-03-29T00:00:00+00:00
+[2024-03-29T09:37:54.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_backfilling.py took 0.082 seconds

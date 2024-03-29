@@ -1,0 +1,32 @@
+[2024-03-29T09:36:51.706+0000] {processor.py:161} INFO - Started process (PID=8981) to work on /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:36:51.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_retry_and_alert.py for tasks to queue
+[2024-03-29T09:36:51.708+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.707+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:36:51.722+0000] {processor.py:840} INFO - DAG(s) 'demo_retry_and_alert' retrieved from /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:36:51.841+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.840+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:demo_retry_and_alert
+[2024-03-29T09:36:51.850+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.850+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:demo_retry_and_alert
+[2024-03-29T09:36:51.855+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.854+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:demo_retry_and_alert
+[2024-03-29T09:36:51.855+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.855+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:36:51.876+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.876+0000] {dag.py:3055} INFO - Creating ORM DAG for demo_retry_and_alert
+[2024-03-29T09:36:51.879+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.879+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_retry_and_alert to None, run_after=None
+[2024-03-29T09:36:51.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_retry_and_alert.py took 0.193 seconds
+[2024-03-29T09:37:22.570+0000] {processor.py:161} INFO - Started process (PID=9205) to work on /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:37:22.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_retry_and_alert.py for tasks to queue
+[2024-03-29T09:37:22.571+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.571+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:37:22.582+0000] {processor.py:840} INFO - DAG(s) 'demo_retry_and_alert' retrieved from /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:37:22.614+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.614+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:22.627+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.627+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_retry_and_alert to None, run_after=None
+[2024-03-29T09:37:22.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_retry_and_alert.py took 0.078 seconds
+[2024-03-29T09:37:52.722+0000] {processor.py:161} INFO - Started process (PID=9421) to work on /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:37:52.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_retry_and_alert.py for tasks to queue
+[2024-03-29T09:37:52.727+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.726+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:37:52.738+0000] {processor.py:840} INFO - DAG(s) 'demo_retry_and_alert' retrieved from /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:37:52.764+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.764+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:52.776+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.776+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_retry_and_alert to None, run_after=None
+[2024-03-29T09:37:52.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_retry_and_alert.py took 0.071 seconds
+[2024-03-29T09:38:23.375+0000] {processor.py:161} INFO - Started process (PID=9637) to work on /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:38:23.376+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_retry_and_alert.py for tasks to queue
+[2024-03-29T09:38:23.376+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.376+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:38:23.385+0000] {processor.py:840} INFO - DAG(s) 'demo_retry_and_alert' retrieved from /opt/airflow/dags/dags/demo_retry_and_alert.py
+[2024-03-29T09:38:23.404+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.404+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:38:23.414+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.414+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_retry_and_alert to None, run_after=None
+[2024-03-29T09:38:23.429+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_retry_and_alert.py took 0.056 seconds

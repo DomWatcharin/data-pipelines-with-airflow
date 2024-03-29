@@ -1,0 +1,17 @@
+[2024-03-29T08:22:00.659+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.notify scheduled__2024-01-07T00:00:00+00:00 [queued]>
+[2024-03-29T08:22:01.160+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.notify scheduled__2024-01-07T00:00:00+00:00 [queued]>
+[2024-03-29T08:22:01.168+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-03-29T08:22:01.414+0000] {taskinstance.py:2192} INFO - Executing <Task(EmailOperator): notify> on 2024-01-07 00:00:00+00:00
+[2024-03-29T08:22:01.457+0000] {standard_task_runner.py:60} INFO - Started process 364 to run task
+[2024-03-29T08:22:01.521+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cryptocurrency_data_pipeline', 'notify', 'scheduled__2024-01-07T00:00:00+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/cryptocurrency_data_pipeline.py', '--cfg-path', '/tmp/tmprdi7vv25']
+[2024-03-29T08:22:01.572+0000] {standard_task_runner.py:88} INFO - Job 111: Subtask notify
+[2024-03-29T08:22:01.751+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-29T08:22:02.178+0000] {task_command.py:423} INFO - Running <TaskInstance: cryptocurrency_data_pipeline.notify scheduled__2024-01-07T00:00:00+00:00 [running]> on host 75e340009066
+[2024-03-29T08:22:03.250+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='dom@dataengineercafe.io' AIRFLOW_CTX_DAG_OWNER='domwatcharin' AIRFLOW_CTX_DAG_ID='cryptocurrency_data_pipeline' AIRFLOW_CTX_TASK_ID='notify' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T00:00:00+00:00'
+[2024-03-29T08:22:03.365+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-03-29T08:22:03.384+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-03-29T08:22:03.392+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-03-29T08:22:03.485+0000] {email.py:281} INFO - Sent an alert email to ['dom@dataengineercafe.io']
+[2024-03-29T08:22:03.716+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=cryptocurrency_data_pipeline, task_id=notify, execution_date=20240107T000000, start_date=20240329T082200, end_date=20240329T082203
+[2024-03-29T08:22:04.091+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-29T08:22:04.297+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

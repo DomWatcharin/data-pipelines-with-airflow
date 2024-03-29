@@ -1,0 +1,37 @@
+[2024-03-28T17:13:03.974+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:13:03.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_cli.py for tasks to queue
+[2024-03-28T17:13:03.978+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:13:03.977+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:13:04.012+0000] {processor.py:840} INFO - DAG(s) 'demo_cli' retrieved from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:13:04.413+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:13:04.411+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:13:04.457+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:13:04.456+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_cli to None, run_after=None
+[2024-03-28T17:13:04.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_cli.py took 0.527 seconds
+[2024-03-28T17:15:41.954+0000] {processor.py:161} INFO - Started process (PID=391) to work on /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:15:42.044+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_cli.py for tasks to queue
+[2024-03-28T17:15:42.148+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:15:42.088+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:15:43.059+0000] {processor.py:840} INFO - DAG(s) 'demo_cli' retrieved from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:15:45.027+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:15:45.009+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:15:48.527+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:15:48.491+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_cli to None, run_after=None
+[2024-03-28T17:15:51.907+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_cli.py took 10.141 seconds
+[2024-03-28T17:17:01.785+0000] {processor.py:161} INFO - Started process (PID=505) to work on /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:17:02.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_cli.py for tasks to queue
+[2024-03-28T17:17:02.469+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:17:02.263+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:17:10.580+0000] {processor.py:840} INFO - DAG(s) 'demo_cli' retrieved from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:17:24.187+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:17:23.523+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:17:29.738+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:17:29.687+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_cli to None, run_after=None
+[2024-03-28T17:17:37.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_cli.py took 36.014 seconds
+[2024-03-28T17:31:24.249+0000] {processor.py:161} INFO - Started process (PID=780) to work on /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:31:26.181+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_cli.py for tasks to queue
+[2024-03-28T17:31:27.281+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:31:27.040+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:38:15.099+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:38:15.163+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_cli.py for tasks to queue
+[2024-03-28T17:38:15.227+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:15.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:38:17.090+0000] {processor.py:840} INFO - DAG(s) 'demo_cli' retrieved from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:38:24.612+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:24.605+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:38:25.087+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:38:25.085+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_cli to None, run_after=None
+[2024-03-28T17:38:25.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_cli.py took 10.895 seconds
+[2024-03-28T17:43:07.395+0000] {processor.py:161} INFO - Started process (PID=449) to work on /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:43:07.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_cli.py for tasks to queue
+[2024-03-28T17:43:08.063+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:43:08.002+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:43:21.434+0000] {processor.py:840} INFO - DAG(s) 'demo_cli' retrieved from /opt/airflow/dags/demo_cli.py
+[2024-03-28T17:43:42.376+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:43:42.283+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-28T17:43:51.594+0000] {logging_mixin.py:188} INFO - [2024-03-28T17:43:51.173+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_cli to None, run_after=None

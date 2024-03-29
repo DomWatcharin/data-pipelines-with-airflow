@@ -1,0 +1,35 @@
+[2024-03-28T17:15:33.885+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.create_import_table scheduled__2024-01-15T00:00:00+00:00 [queued]>
+[2024-03-28T17:15:35.798+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cryptocurrency_data_pipeline.create_import_table scheduled__2024-01-15T00:00:00+00:00 [queued]>
+[2024-03-28T17:15:35.810+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-03-28T17:15:43.438+0000] {taskinstance.py:2192} INFO - Executing <Task(PostgresOperator): create_import_table> on 2024-01-15 00:00:00+00:00
+[2024-03-28T17:15:43.828+0000] {standard_task_runner.py:60} INFO - Started process 398 to run task
+[2024-03-28T17:15:44.229+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'cryptocurrency_data_pipeline', 'create_import_table', 'scheduled__2024-01-15T00:00:00+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/cryptocurrency_data_pipeline.py', '--cfg-path', '/tmp/tmpx2yvev8m']
+[2024-03-28T17:15:44.513+0000] {standard_task_runner.py:88} INFO - Job 62: Subtask create_import_table
+[2024-03-28T17:15:49.741+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-28T17:15:54.624+0000] {task_command.py:423} INFO - Running <TaskInstance: cryptocurrency_data_pipeline.create_import_table scheduled__2024-01-15T00:00:00+00:00 [running]> on host de9dce8fd105
+[2024-03-28T17:16:03.112+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='dom@dataengineercafe.io' AIRFLOW_CTX_DAG_OWNER='domwatcharin' AIRFLOW_CTX_DAG_ID='cryptocurrency_data_pipeline' AIRFLOW_CTX_TASK_ID='create_import_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-15T00:00:00+00:00'
+[2024-03-28T17:16:03.289+0000] {sql.py:276} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS cryptocurrency_import (
+                timestamp BIGINT,
+                open FLOAT,
+                highest FLOAT,
+                lowest FLOAT,
+                closing FLOAT,
+                volume FLOAT
+            )
+        
+[2024-03-28T17:16:05.385+0000] {base.py:83} INFO - Using connection ID '***' for task execution.
+[2024-03-28T17:16:05.668+0000] {base.py:83} INFO - Using connection ID '***' for task execution.
+[2024-03-28T17:16:06.158+0000] {sql.py:432} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS cryptocurrency_import (
+                timestamp BIGINT,
+                open FLOAT,
+                highest FLOAT,
+                lowest FLOAT,
+                closing FLOAT,
+                volume FLOAT
+            )
+        , parameters: None
+[2024-03-28T17:16:07.452+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=cryptocurrency_data_pipeline, task_id=create_import_table, execution_date=20240115T000000, start_date=20240328T171534, end_date=20240328T171607
+[2024-03-28T17:16:14.694+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-28T17:16:19.639+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,28 @@
+[2024-03-29T09:36:51.033+0000] {processor.py:161} INFO - Started process (PID=8956) to work on /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:36:51.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_task_group.py for tasks to queue
+[2024-03-29T09:36:51.035+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.035+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:36:51.049+0000] {processor.py:840} INFO - DAG(s) 'demo_task_group' retrieved from /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:36:51.179+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.179+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:36:51.189+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:36:51.189+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_task_group to None, run_after=None
+[2024-03-29T09:36:51.207+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_task_group.py took 0.178 seconds
+[2024-03-29T09:37:22.130+0000] {processor.py:161} INFO - Started process (PID=9180) to work on /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:37:22.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_task_group.py for tasks to queue
+[2024-03-29T09:37:22.134+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.133+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:37:22.149+0000] {processor.py:840} INFO - DAG(s) 'demo_task_group' retrieved from /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:37:22.203+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.203+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:22.221+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:22.220+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_task_group to None, run_after=None
+[2024-03-29T09:37:22.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_task_group.py took 0.130 seconds
+[2024-03-29T09:37:52.388+0000] {processor.py:161} INFO - Started process (PID=9396) to work on /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:37:52.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_task_group.py for tasks to queue
+[2024-03-29T09:37:52.390+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:37:52.404+0000] {processor.py:840} INFO - DAG(s) 'demo_task_group' retrieved from /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:37:52.415+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.415+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:37:52.428+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:37:52.427+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_task_group to None, run_after=None
+[2024-03-29T09:37:52.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_task_group.py took 0.061 seconds
+[2024-03-29T09:38:23.052+0000] {processor.py:161} INFO - Started process (PID=9612) to work on /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:38:23.053+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags/demo_task_group.py for tasks to queue
+[2024-03-29T09:38:23.054+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.054+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:38:23.064+0000] {processor.py:840} INFO - DAG(s) 'demo_task_group' retrieved from /opt/airflow/dags/dags/demo_task_group.py
+[2024-03-29T09:38:23.154+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.154+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-03-29T09:38:23.164+0000] {logging_mixin.py:188} INFO - [2024-03-29T09:38:23.164+0000] {dag.py:3820} INFO - Setting next_dagrun for demo_task_group to None, run_after=None
+[2024-03-29T09:38:23.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags/demo_task_group.py took 0.134 seconds
